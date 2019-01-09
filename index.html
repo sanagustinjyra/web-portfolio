@@ -145,7 +145,7 @@
               <img class="card-img-top" src="img/portfolio/fullsize/cp2.png">
               <div class="card-body text-center">
                 <h6>Dhey's Gourmet</h6>
-                <a href="http://dheysgourmet.x10host.com/cp2_mockup/app/views/index.php" class="btn btn-primary btn-sm">View</a>
+                <a href="http://dheysgourmet.x10host.com/cp2_mockup/app/views/index.php" class="btn btn-primary btn-sm disabled" data-toggle="tooltip" data-placement="view" title="Under Maintenance"><del>View</del></a>
               </div>
             </div>
           </div>
@@ -201,6 +201,12 @@
         </div>
       </div>
     </section>
+
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
+    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
